@@ -13,7 +13,7 @@ done
 HMDM_WAR="$(basename -- $HMDM_URL)"
 
 if [ ! -f "$CACHE_DIR/$HMDM_WAR" ]; then
-    wget $DOWNLOAD_CREDENTIALS $HMDM_URL -O $CACHE_DIR/$HMDM_WAR
+    wget $7 $HMDM_URL -O $CACHE_DIR/$HMDM_WAR
 fi
 
 if [ ! -f "$TOMCAT_DIR/webapps/ROOT.war" ] || [ "$FORCE_RECONFIGURE" = "true" ]; then

@@ -1,0 +1,1 @@
+gcloud compute instances delete hmdm-docker --zone=us-central1-a --quiet
